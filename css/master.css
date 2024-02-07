@@ -369,6 +369,11 @@ body {
     border: 2px solid var(--main-color);
   }
 }
+@media (min-width: 991px) and (max-width: 1094px) {
+  .about .about-content .image {
+    margin-top: 220px;
+  }
+}
 .about .about-content .txt {
   flex-basis: calc(100% - 500px);
   text-align: left;

@@ -25,28 +25,24 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
-.container,
-.services-container {
+.container {
   margin: 0 auto 0 auto;
 }
 /* small */
 @media (min-width: 768px) {
-  .container,
-  .services-container {
+  .container {
     width: 750px;
   }
 }
 /* medium  */
-@media (min-width: 992px) {
-  .container,
-  .services-container {
+@media (min-width: 1095px) {
+  .container {
     width: 970px;
   }
 }
 /* large */
 @media (min-width: 1200px) {
-  .container,
-  .services-container {
+  .container {
     width: 1170px;
   }
 }
@@ -80,7 +76,8 @@ body {
 /* end components */
 /* start header */
 .header {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .header .container {
   display: flex;
@@ -187,7 +184,8 @@ body {
 /* start features */
 .features {
   background-color: var(--sec-bck);
-  padding: var(--sec-padding);
+  padding-top: var(--sec-padding);
+  padding-bottom: var(--sec-padding);
 }
 .features .container {
   gap: 20px;
@@ -210,18 +208,20 @@ body {
 /* end features */
 /* start services */
 .services {
-  padding: var(--sec-padding);
+  padding-top: var(--sec-padding);
+  padding-bottom: var(--sec-padding);
 }
 .services .container {
   text-align: center;
-  margin-bottom: var(--margin-large);
 }
 .services .services-container {
   gap: 20px;
+  margin-top: var(--margin-large);
 }
 .services .services-container .srv {
   display: flex;
   margin-bottom: 60px;
+  padding: 15px;
 }
 @media (max-width: 767px) {
   .services .services-container .srv {
@@ -249,7 +249,7 @@ body {
 
 .services .image {
   position: relative;
-  padding-left: 90px;
+  padding: 30px 30px 30px 90px;
 }
 .services .image img {
   width: 260px;
@@ -258,13 +258,13 @@ body {
   content: " ";
   position: absolute;
   width: 100px;
-  height: calc(100% + 100px);
+  height: calc(100% + 80px);
   right: -17px;
-  top: -50px;
+  top: -40px;
   background-color: var(--color-4);
   z-index: -1;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1095px) {
   .services .image-colum {
     display: none;
   }
@@ -274,7 +274,8 @@ body {
 /* start portfolio */
 .portfolio {
   background-color: var(--sec-bck);
-  padding: var(--sec-padding);
+  padding-top: var(--sec-padding);
+  padding-bottom: var(--sec-padding);
 }
 .portfolio .container {
   text-align: center;
@@ -305,8 +306,8 @@ body {
 /* end portfolio */
 /* start about */
 .about {
-  padding: var(--sec-padding);
-  margin-bottom: var(--margin-large);
+  padding-top: var(--sec-padding);
+  padding-bottom: var(--sec-padding);
 }
 .about .container {
   text-align: center;
@@ -381,6 +382,7 @@ body {
   font-weight: bold;
   line-height: 2;
   margin-bottom: 30px;
+  padding: 0 20px;
 }
 .about .about-content .txt hr {
   display: inline-block;
@@ -390,11 +392,13 @@ body {
 .about .about-content .txt p:last-of-type {
   line-height: 2;
   color: #777;
+  padding: 20px;
 }
 /* end about */
 /* start contact */
 .contact {
-  padding: var(--sec-padding);
+  padding-top: var(--sec-padding);
+  padding-bottom: var(--sec-padding);
   background-color: var(--sec-bck);
 }
 .contact .container {
@@ -437,7 +441,8 @@ body {
 .footer {
   text-align: center;
   font-size: 18px;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: var(--color-4);
   color: white;
 }
